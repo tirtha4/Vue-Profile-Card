@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card: Tirthad</title>
+
+
+
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://unpkg.com/vue"></script>
+
+
+  </head>
+
+  <body>
+
+
+
+    <div class="profile-card" id="app">
+
+
+      <header>
+
+             <a target="_blank" href="#">
+              <img :src="image" class="hoverZoomLink">     </a>
+
+            <h1>  {{Name}}    </h1>
+
+            <h2>    {{Role}}   </h2>
+
+
+      </header>
+
+
+          <div class="profile-bio">
+
+            <p>
+              {{quote}}
+            </p>
+
+          </div>
+
+          <!-- social links  -->
+          <ul class="profile-social-links">
+            <li>
+              <a target="_blank" :href="facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" :href='twitter'>
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" :href='linkedin'>
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+
+          </ul>
+
+  </div>
+
+
+<script src="../vue/app.js"></script>
+
+  </body>
